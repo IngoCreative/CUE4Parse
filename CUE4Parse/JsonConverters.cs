@@ -224,8 +224,8 @@ public class FColorVertexBufferConverter : JsonConverter<FColorVertexBuffer>
     {
         writer.WriteStartObject();
 
-        // writer.WritePropertyName("Data");
-        // serializer.Serialize(writer, value.Data);
+        writer.WritePropertyName("Data");
+        serializer.Serialize(writer, value.Data);
 
         writer.WritePropertyName("Stride");
         writer.WriteValue(value.Stride);
